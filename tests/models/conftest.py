@@ -1453,7 +1453,7 @@ def input_tiny() -> DataLoader:
 
 
 tiny_bert_config_params = [
-    BertConfig(
+    BertConfig(  # pylint: disable=unexpected-keyword-arg
         vocab_size=vocab_size,  # 30522
         hidden_size=128,  # 768
         num_hidden_layers=2,  # 12
@@ -1559,7 +1559,7 @@ def bert_linear_names() -> list:
 #############################
 
 tiny_llama_config_params = [
-    LlamaConfig(
+    LlamaConfig(  # pylint: disable=unexpected-keyword-arg
         vocab_size=vocab_size,  # 32000
         hidden_size=128,  # 4096
         intermediate_size=256,  # 11008
@@ -1648,7 +1648,7 @@ def llama_linear_names() -> list:
 ###############################
 
 tiny_granite_config_params = [
-    GraniteConfig(
+    GraniteConfig(  # pylint: disable=unexpected-keyword-arg
         vocab_size=vocab_size,  # 32000
         hidden_size=128,  # 4096
         intermediate_size=256,  # 11008
